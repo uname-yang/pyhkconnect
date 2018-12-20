@@ -102,3 +102,32 @@ venv.bak/
 
 # mypy
 .mypy_cache/
+
+beautifulsoup4-*.dist-info
+bin
+bs4
+certifi
+certifi-*.dist-info
+chardet
+chardet-*.dist-info
+dateutil
+idna
+idna-*.dist-info
+lxml
+lxml-*.dist-info
+numpy
+numpy-*.dist-info
+pandas
+pandas-*.dist-info
+python_dateutil-*.dist-info
+pytz
+pytz-*.dist-info
+requests
+requests-*.dist-info
+requirements.txt
+simplejson
+simplejson-*.dist-info
+six-*.dist-info
+six.py
+urllib3
+urllib3-*.dist-info
