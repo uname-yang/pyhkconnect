@@ -1,12 +1,14 @@
+# -*- coding: utf-8 -*-
+
+import setuptools
+
+# with open("README.md", "r") as fh:
+#     long_description = fh.read()
+
+long_desc = """
 # pyhkconnect
 
 香港交易所 沪港通 深港通 数据接口
-
-## Install
-
-```bash
-pip install pyhkconnect
-```
 
 ## Demo
 
@@ -37,19 +39,35 @@ pip install pyhkconnect
 >>>
 >>>json_obj=dp.to_json(orient='index') # return json data
 ```
+"""
 
-## APIs
 
-### 获取北上沪港通持股数据
+def read_install_requires():
+    reqs = [
+        'pandas >= 0.18.0',
+        'requests >= 2.0.0',
+        'lxml >= 3.8.0',
+        'simplejson >= 3.16.0',
+        'beautifulsoup4 >= 4.6.3'
+    ]
+    return reqs
 
-```python
-import pyhkconnect as hkc
-hkc.statistics_northbound_sh()
-```
 
-### 获取北上深港通持股数据
-
-```python
-import pyhkconnect as hkc
-hkc.statistics_northbound_sz()
-```
+setuptools.setup(
+    name="pyhkconnect",
+    version="0.0.1",
+    author="Yang Yu",
+    author_email="yang.lights@hotmail.com",
+    description="香港交易所 沪港通 深港通 数据接口 HKC",
+    long_description=long_desc,
+    long_description_content_type="text/markdown",
+    url="https://github.com/uname-yang/pyhkconnect",
+    packages=setuptools.find_packages(),
+    classifiers=[
+        "Programming Language :: Python :: 3",
+        "License :: OSI Approved :: MIT License",
+        "Operating System :: OS Independent",
+    ],
+    keywords=('Financial Data', 'HKEX', 'HKC', '沪港通', '深港通', 'Python Api'),
+    install_requires=read_install_requires(),
+)
