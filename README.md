@@ -53,3 +53,9 @@ hkc.statistics_northbound_sh()
 import pyhkconnect as hkc
 hkc.statistics_northbound_sz()
 ```
+
+---
+
+有任何问题请联系我。
+
+![wechat](qrcode.jpg)
