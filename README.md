@@ -36,6 +36,24 @@ pip install pyhkconnect
 [845 rows x 4 columns]
 >>>
 >>>json_obj=dp.to_json(orient='index') # return json data
+
+# 按日期获取
+import pyhkconnect as hkc
+sh_20220119 = hkc.northbound_shareholding_sh('2022/01/19')
+sh_20220119
+       code  ... shareholding_percent
+0     30002  ...                2.45%
+1     30005  ...                3.12%
+2     30006  ...               15.15%
+3     30008  ...                4.57%
+4     30009  ...                3.88%
+     ...  ...                  ...
+1007  95296  ...                0.23%
+1008  95337  ...                0.29%
+1009  95358  ...                0.58%
+1010  95376  ...                0.12%
+1011  95499  ...                1.06%
+[1012 rows x 4 columns]
 ```
 
 ## APIs

@@ -131,3 +131,6 @@ six-*.dist-info
 six.py
 urllib3
 urllib3-*.dist-info
+
+# idea
+.idea
